@@ -18,5 +18,8 @@ lang_btn = InlineKeyboardMarkup(
         [
         InlineKeyboardButton(text="🇸🇦 Arb", callback_data="ar"),
         ],
+        [
+        InlineKeyboardButton(text="🇮🇹 Ita", callback_data="it"),
+        ],
     ],
 )
