@@ -17,7 +17,7 @@ PROXY_URL = "http://proxy.server:3128"
 session = AiohttpSession(proxy=PROXY_URL)
 TOKEN = "8095330098:AAFyKWlj9Rns06BtH9DCL2YOEZ-qC94sG9o"
 
-bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
+bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"), session=session)
 
 
 dp = Dispatcher()
