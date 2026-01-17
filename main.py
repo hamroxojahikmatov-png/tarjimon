@@ -28,7 +28,7 @@ dp = Dispatcher()
 @dp.message(CommandStart())
 async def start_hendler(message: types.Message):
     full_name = message.from_user.full_name
-    await message.answer(f"Salom {full_name} botga xush kelibsiz\nTarjima qilmoqchi bo'lgan matningizni kiriting")
+    await message.answer(f"Salom <b>{full_name}</b> botga xush kelibsiz\nTarjima qilmoqchi bo'lgan matningizni kiriting")
 
 
 user_data = {
