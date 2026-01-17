@@ -7,19 +7,22 @@ lang_btn = InlineKeyboardMarkup(
         InlineKeyboardButton(text="🇺🇿 Uzb", callback_data="uz"),
         ],
         [
-        InlineKeyboardButton(text="🇷🇺 Rus", callback_data="ru"),
+        InlineKeyboardButton(text="🇷🇺 Russia", callback_data="ru"),
         ],
         [
-        InlineKeyboardButton(text="🇺🇸 Eng", callback_data="en"),
+        InlineKeyboardButton(text="🇺🇸 English", callback_data="en"),
         ],
         [
-        InlineKeyboardButton(text="🇫🇷 Fra", callback_data="fr"),
+        InlineKeyboardButton(text="🇫🇷 France", callback_data="fr"),
         ],
         [
-        InlineKeyboardButton(text="🇸🇦 Arb", callback_data="ar"),
+        InlineKeyboardButton(text="🇸🇦 Arabic", callback_data="ar"),
         ],
         [
-        InlineKeyboardButton(text="🇮🇹 Ita", callback_data="it"),
+        InlineKeyboardButton(text="🇮🇹 Italy", callback_data="it"),
+        ],
+        [
+        InlineKeyboardButton(text="🇨🇳 China", callback_data="zh"),
         ],
     ],
 )
