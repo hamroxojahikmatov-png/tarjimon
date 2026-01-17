@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO)
 
 PROXY_URL = "http://proxy.server:3128"
 session = AiohttpSession(proxy=PROXY_URL)
-TOKEN = "8095330098:AAFyKWlj9Rns06BtH9DCL2YOEZ-qC94sG9o"
+TOKEN = "8550855524:AAHbykH2ZOqwVPpgZ3jPHtELbRVrvAJJJZY"
 CHANNEL_ID = "8168638997"
 
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"), session=session)
