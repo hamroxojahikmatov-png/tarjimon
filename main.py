@@ -42,6 +42,18 @@ async def get_text(message: types.Message):
     user_data[message.from_user.id] = user_text
     await message.answer("Qaysi tilga tarjima qilmoqchisiz?", reply_markup=lang_btn)
 
+@dp.message(F.text == "/admin")
+async def admin_panel(message: types.Message):
+    if message.from_user.id == 8168638997:
+        await message.answer("Xush kelibsiz admin, qaysi tilni qoshmoqchisiz?")
+        await message.answer("Mavjud tillar: O'zbek, Rus, Ingliz, Fransuz, Arab, Italyan, Xitoy")
+        await message.answer("Yangi tilni kiriting:")
+        @dp.message(F.text)
+        async def add_new_language(message: types.Message):
+            new_language = message.text
+            await message.answer(f"Yangi til qo'shildi: {new_language}")
+    else:
+        await message.answer("Siz admin emassiz")
 
 @dp.callback_query()
 async def get_user_lang(callback: types.CallbackQuery):
